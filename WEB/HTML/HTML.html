@@ -4,7 +4,86 @@
     <title>Vedat Web Sitesi</title>
     <meta charset="utf-8">
 
+    <!--INTERNAL Stil ayarı : Sayfa içi stil tanımı -->
+    <style>
+        body {
+            background-color: aquamarine;
+        }
 
+        p {
+            margin: 20px;
+            border: 2px solid red;
+            padding: 20px;
+        }
+
+        .menuItem {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            color: white;
+            background-color: darkred;
+            font-weight: 700;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            padding: 10px 25px 10px 25px;
+            text-align: center;
+        }
+
+        #menu {
+            list-style: none;
+            padding: 0px 5px 0px 5px;
+        }
+
+        #iletisim {
+            border: 3px dotted red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menuItem:hover {
+            background-color: darkcyan;
+        }
+
+        #AnaDiv {
+            width: 100%;
+            height: 600px;
+            font-size: 0px;
+        }
+
+        #SolUstDiv {
+            width: 15%;
+            height: 105px;
+            background-color: #EB8E2A;
+            display: inline-block;
+            float: left;
+        }
+
+        #SagUstDiv {
+            width: 85%;
+            height: 105px;
+            background-color: #1C9947;
+            display: inline-block;
+            /* float:right;*/
+        }
+
+        #SolAltDiv {
+            width: 15%;
+            height: 500px;
+            background-color: #2A47EB;
+            display: inline-block;
+            float: left;
+        }
+
+        #SagAltDiv {
+            width: 85%;
+            height: 500px;
+            background-color: #D1B5EB;
+            display: inline-block;
+            /*float: right;*/
+        }
+
+    </style>
 
 
 </head>
@@ -97,7 +176,7 @@
     <hr />
     <h2> Bilgi Formu </h2>
 
-    <table>
+    <table id="iletisim">
         <tr>
             <td><label>Ad:</label> </td>
             <td><input type="text" placeholder="Adınızı Giriniz" /></td>
@@ -186,20 +265,30 @@
 
         <tr>
             <td height="500px" style="background-color:deepskyblue">
-                <ul style="list-style:none;padding:0px 5px 0px 5px;">
+                <!--INLINE stil tanımı-->
+                <!--<ul style="list-style:none;padding:0px 5px 0px 5px;">
                     <li style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:x-large;color:white;background-color:darkred;font-weight:700;border:2px solid black;margin-bottom:20px; padding:10px 25px 10px 25px; text-align:center;">Hakkımızda</li>
                     <li style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:x-large;color:white;background-color:darkred;font-weight:700;border:2px solid black;margin-bottom:20px; padding:10px 25px 10px 25px; text-align:center;">Ürünlerimiz</li>
-
-                    
-                    <li style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:x-large;color:white;background-color:darkred;font-weight:700;border:2px solid black;margin-bottom:20px; padding:10px 25px 10px 25px; text-align:center;">İletişim</li> 
-
-
+                    <li style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:x-large;color:white;background-color:darkred;font-weight:700;border:2px solid black;margin-bottom:20px; padding:10px 25px 10px 25px; text-align:center;">İletişim</li>
                     <li style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:x-large;color:white;background-color:darkred;font-weight:700;border:2px solid black;margin-bottom:20px; padding:10px 25px 10px 25px; text-align:center;">Şubelerimiz</li>
+                </ul>-->
+
+                <ul id="menu">
+                    <a href="#">
+                    <li class="menuItem">Hakkımızda</li> </a>
+                    <a href="#">
+                    <li class="menuItem">Ürünlerimiz</li> </a>
+                    <a href="#">
+                    <li class="menuItem">İletişim</li> </a>
+                    <a href="#">
+                    <li class="menuItem">Şubelerimiz</li> </a>
+
                 </ul>
+
 
             </td>
             <td style="background-color:blueviolet">
-                <table border="1" width="100%" >
+                <table border="1" width="100%">
                     <tr>
                         <td height="250px">1,1</td>
                         <td>1,2</td>
@@ -218,11 +307,15 @@
 
     </table>
 
+    <hr />
+
+
+    <div id="AnaDiv">
+        <div id="SolUstDiv"></div><div id="SagUstDiv"></div><div id="SolAltDiv"></div><div id="SagAltDiv"></div>
+    </div>
 
 
 
-
-    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 
 </body>
 </html>
