@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title> JavaScript Nedir? </title>
+    <meta charset="utf-8" />
+    <script>
+
+        function MesajVer() {
+            alert('Merhaba Dünya');
+        }
+
+        /* alert('Merhaba Dünya'); */
+    </script>
+
+    <script src="script.js" type="text/javascript"></script>
+
+    <style>
+
+        .button {
+            background-color:yellow;
+            
+        }
+
+        #sonuc {
+            background-color:lightgreen;
+            font-weight : 700;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body onload="MesajVer()">
+    <h1 id="baslik">Javascript Nedir?</h1>
+    <p>Javascript web sayfalarını zenginleştirmek, kodla daha etkili ve daha görselliği yüksek sayfalar oluşturmak için kullanılır. HTML içerisinde olmayan işlevleri, animasyonları, hesaplama gerektiren işlemleri yerine getirmek için js kullanılır.</p>
+    <hr />
+    <h3> Yazım Teknikleri:</h3>
+    <ol>
+        <li>
+            Inline (Satır İçi) js kodu yazımı :
+            <input class="button" type="button" value="Hesapla" onclick="alert('xxxxx');" />
+        </li>
+        <li>
+            Internal (Dahili) fonksiyon çağrısı :
+            <input class="button" type="button" value="Tıkla" onclick="MesajVer();" />
+        </li>
+        <li>
+            External (Harici) fonksiyon çağrısı :
+            <input class="button" type="button" value="Tıkla" onclick="HariciMesajVer();" />
+        </li>
+    </ol>
+<hr />
+    <h3>Javascript Kodlama</h3>
+    <p>HTML DOM: Document Object Model</p>
+    <p> HTML sayfa yapısını temsil eder. En tepede HTML Document nesnesi bulunur. Ona bağlı HEAD ve BODY olarak 2 alt nesne vardır. Title ve meta içerikleri HEAD altında, sayfa içerikleri ise BODY altında yer alır.</p>
+    <h3> Javascript sayfa içerisinde yer alan bir nesneye erişmenin yolları:</h3>
+    <ol>
+        <li>
+            Nesne ID'si ile :
+            <input class="button" type="button" value="Başlık Alert" onclick="BaslikAlert();" />
+            <input class="button" type="button" value="Başlığı Değiştir" onclick="BaslikDegistir();" />
+            <input class="button" type="button" value="Başlığı Gizle/Göster" onclick="BaslikGizleGoster();" />
+        </li>
+    </ol>
+    
+    <hr />
+
+    <h3>Javascript ile Form Nesnelerinden veri çekme, veri aktarma, hesaplama yapma, if-else </h3>
+    <p>Sayfa Üzerinde bulunan Form nesnelerinden (input) veri çekmek için, nenelerin "id" attribute lerinden yararlanabiliriz. document.getElementById metodunu kullanarak nesnelere id leri üzerinden erişebiliriz. Bazı nesneler (Örneğin: başlıklar, paragraflar..v.b.) içerisine HTML içeriği konulabildiğinden bu nesnelerin "innerHTML" özeliklerini kullanabiliriz. İçerisine sadece text girilen nesnelerden "innerText" özelliğini kullanabiliriz. Form nesnelerinden ise, "value" özelliklerinden veri çekebilir ya da veri aktarabiliriz. </p>
+    <table>
+        <tr>
+            <td><input type="number" id="s1" placeholder="1. Sayıyı Giriniz" /> </td>
+            
+            <td>
+                <select id="oprt">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+
+            </td>
+
+            <td><input type="number" id="s2" placeholder="2. Sayıyı Giriniz"/></td>
+            <td><input class="button" type="button" value="HESAPLA" onclick="Hesapla();" /></td>
+            <td><input type="number" id="sonuc" placeholder="SONUÇ"  /></td>
+        </tr>
+
+    </table>
+
+    <hr />
+    <h3>Değişkenler</h3>
+    <p>Javascript te de bellekte geçici süreliğine veri kaydedilebilir. Temel olarak 3 tip değişken bildirimi yapılabilir. Tipe göre (int, string, bool, double, v.b.) ayrı değişken bildirimi yoktur. Burada değişkenler kullanım alanına göre belirlenir ve bir değişken içerisine her türden veri atanabilir.</p>
+    <p>Değişken Tanımlama İfadeleri:</p>
+    <ul>
+        <li title="Sonuç için tıkla" onclick="DegiskenlerVar();">var : Global değişken tanımlar. Yani js kodu içerisinde bu değişkene her yerden erişilebilir. Aynı scope içinde birden fazla aynı isinde değişken tanımlaması yapılabilir. Önceki değişken silinerek yenisi oluşturulur.</li>
+        <li title="Sonuç için tıkla" onclick="DegiskenlerLet();">let : Lokal değişken tanımlar. Yani let ile tanımlanan değişken sadece tanımlandığı scope ta geçerlidir. Aynı scope içinde aynı isimde tek değişken oluşturulabilir. </li>
+        <li title="Sonuç için tıkla" onclick="DegiskenlerConst();">const: Sabit değer tutan alanlar tanımlar. Yani const ile tanımlanan sabite atanan veri daha sonra değiştirilemez. Bu nedenle verisi sabit alan ilk tanımlanırken atanır. Aynı Let gibi sadece tanımlandığı scope ta geçerlidir. Aynı scope ta aynı isimde tek teğişken oluşturulabilir.</li>
+
+    </ul>
+    
+
+
+</body>
+</html>
