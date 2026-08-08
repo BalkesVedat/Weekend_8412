@@ -152,23 +152,32 @@ function WhileDongusu()
     var cevap = true;
 
     while (cevap) {       
-        var gelenDeger = prompt("Toplanacak değeri girin:", "0");
+        var gelenDeger = parseFloat(prompt("Toplanacak değeri girin:", "0"));
 
-/*        console.log(gelenDeger);  */    
-
-        if (gelenDeger == "NaN" || gelenDeger == null || gelenDeger == "") {
+        if (gelenDeger.toString() == "NaN") {
             gelenDeger = 0;
-        }      
+        } 
 
-                toplam += parseFloat(gelenDeger);
-        /*console.log(toplam); */
+        toplam += parseFloat(gelenDeger);
         var cevap = confirm("Devam etmek istiyor musunuz?");
-
-        if (!cevap) {
-            cevap = false;
-        }
     }
 
     alert("Toplam:"+toplam);
+}
 
+function DoWhileDongusu() {
+    var toplam = 0;
+
+    do {
+        var gelenDeger = parseFloat(prompt("Toplanacak değeri girin:", "0"));
+
+        if (gelenDeger.toString() == "NaN") {
+            gelenDeger = 0;
+        }
+
+        toplam += parseFloat(gelenDeger);
+        var cevap = confirm("Devam etmek istiyor musunuz?");
+    } while (cevap) 
+
+    alert("Toplam:" + toplam);
 }
