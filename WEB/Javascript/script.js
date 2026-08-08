@@ -90,7 +90,85 @@ function DegiskenlerVar() {
 }
 
 function DegiskenlerConst() {
+    const kdv = 0.15; // ilk değer ataması yapılarak tanımlanır.
+
+    // kdv = 0.3; sabitlere yeniden değer ataması yapılamaz.
+
+    // const kdv = 0.35; const ile tanımlanan bir değişken aynı isimle tekrar tanımlanamaz.
+
+    if (kdv>0) {
+        const mesaj = "Değer doğru girildi";
+    }
+
+    console.log("Kdv oranı :" + kdv);
+   // console.log(mesaj); const ile tanımlanan değişken sadece tanımlandığı aralıkta geçerlidir. IF ten çıkınca mesaj değişkeni hafızadan atılır.
+}
 
 
+function SwitchCase()
+{
+    var secim = document.getElementById("oprt").value;
+
+    switch (secim)
+    {
+        case "+":
+            console.log("Toplama seçildi");
+            break;
+        case "-":
+            console.log("Çıkarma seçildi");
+            break;
+        case "*":
+            console.log("Çarpma seçildi");
+            break;
+        case "/":
+            console.log("Bölme seçildi");
+            break;
+        default:
+            console.log("Hatalı Seçim.");
+            break;
+    }
+
+
+
+}
+
+
+function ForDongusu()
+{
+    var limit = prompt("Sayaç değerini giriniz:", "50");
+    let toplam = 0;
+
+    for (let i = 0; i <= limit ;i++)
+    {
+        toplam += i;
+    }
+
+    alert("0 ile " + limit + " arasındaki sayıların toplamı : " + toplam);
+}
+
+function WhileDongusu()
+{
+    var toplam = 0;
+    var cevap = true;
+
+    while (cevap) {       
+        var gelenDeger = prompt("Toplanacak değeri girin:", "0");
+
+/*        console.log(gelenDeger);  */    
+
+        if (gelenDeger == "NaN" || gelenDeger == null || gelenDeger == "") {
+            gelenDeger = 0;
+        }      
+
+                toplam += parseFloat(gelenDeger);
+        /*console.log(toplam); */
+        var cevap = confirm("Devam etmek istiyor musunuz?");
+
+        if (!cevap) {
+            cevap = false;
+        }
+    }
+
+    alert("Toplam:"+toplam);
 
 }

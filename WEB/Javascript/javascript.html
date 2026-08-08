@@ -98,10 +98,21 @@
         <li title="Sonuç için tıkla" onclick="DegiskenlerVar();">var : Global değişken tanımlar. Yani js kodu içerisinde bu değişkene her yerden erişilebilir. Aynı scope içinde birden fazla aynı isinde değişken tanımlaması yapılabilir. Önceki değişken silinerek yenisi oluşturulur.</li>
         <li title="Sonuç için tıkla" onclick="DegiskenlerLet();">let : Lokal değişken tanımlar. Yani let ile tanımlanan değişken sadece tanımlandığı scope ta geçerlidir. Aynı scope içinde aynı isimde tek değişken oluşturulabilir. </li>
         <li title="Sonuç için tıkla" onclick="DegiskenlerConst();">const: Sabit değer tutan alanlar tanımlar. Yani const ile tanımlanan sabite atanan veri daha sonra değiştirilemez. Bu nedenle verisi sabit alan ilk tanımlanırken atanır. Aynı Let gibi sadece tanımlandığı scope ta geçerlidir. Aynı scope ta aynı isimde tek teğişken oluşturulabilir.</li>
-
     </ul>
     
+    <hr />
+    <h3>Karar Yapıları</h3>
+    <p><strong>if (koşul) { koşul doğru ise yapılacak işlemler  } else { yanlış ise yapılaca işlemler } </strong> </p>
+    <p>Bir koşulun değerine göre 2 işlemden birinin çalışmasını sağlar.</p>
+    <p>Kontrol edilecek durum 2 den fazla ise; <strong> 'if' /  'else if'  / 'else' </strong> yapısı kullanılarak her durum için if kontrolü yapılır. </p>
+    <p>Alternatif olarak çoklu durum kontrolü için <strong> switch-case </strong> yapısı da kullanılabilir. <input type="button" value="Tıkla" onclick="SwitchCase();" /> </p> 
 
+    <hr />
+    <h3>Döngüler </h3>
+    <ul>
+        <li>For Döngüsü: <input type="button" value="Tıkla" onclick="ForDongusu();" /></li>
+        <li>While Döngüsü: <input type="button" value="Tıkla" onclick="WhileDongusu();" /></li>
+    </ul>
 
 </body>
 </html>
