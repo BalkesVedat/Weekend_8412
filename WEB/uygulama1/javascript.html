@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>JavaScript | Frontend101</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Frontend<span>101</span>
+        </a>
+
+        <button id="menuButton" class="menu-button">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="index.html">
+                Ana Sayfa
+            </a>
+
+            <a href="html-css.html">
+                HTML & CSS
+            </a>
+
+            <a href="javascript.html" class="active">
+                JavaScript
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-title">
+
+    <div class="container">
+
+        <span class="badge">
+            Ders 2
+        </span>
+
+        <h1>
+            JavaScript
+        </h1>
+
+        <p>
+            Web sayfalarına hareket ve etkileşim kazandır.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container lesson">
+
+
+    <!-- Değişken -->
+
+    <article>
+
+        <h2>
+            1. Değişkenler
+        </h2>
+
+        <p>
+            Bilgileri saklamak için değişkenler kullanılır.
+        </p>
+
+        <pre><code>const isim = "Ali";
+
+let yas = 20;
+
+yas = 21;
+
+console.log(isim);
+console.log(yas);</code></pre>
+
+    </article>
+
+
+    <!-- Fonksiyon -->
+
+    <article>
+
+        <h2>
+            2. Fonksiyonlar
+        </h2>
+
+        <p>
+            Tekrar kullanılacak kodları fonksiyon haline getirebiliriz.
+        </p>
+
+        <pre><code>function topla(a, b) {
+
+    return a + b;
+
+}
+
+const sonuc = topla(10, 20);
+
+console.log(sonuc);</code></pre>
+
+    </article>
+
+
+    <!-- Array -->
+
+    <article>
+
+        <h2>
+            3. Diziler
+        </h2>
+
+        <p>
+            Birden fazla değeri tek bir değişkende saklayabiliriz.
+        </p>
+
+        <pre><code>const isimler = [
+    "Ali",
+    "Ayşe",
+    "Mehmet"
+];
+
+console.log(isimler[0]);
+
+isimler.forEach(isim => {
+    console.log(isim);
+});</code></pre>
+
+    </article>
+
+
+    <!-- DOM -->
+
+    <article>
+
+        <h2>
+            4. DOM
+        </h2>
+
+        <p>
+            JavaScript ile HTML elementlerini seçebilir
+            ve değiştirebiliriz.
+        </p>
+
+        <pre><code>const baslik =
+    document.querySelector("#baslik");
+
+baslik.textContent =
+    "Yeni Başlık";</code></pre>
+
+
+        <div class="example-box">
+
+            <h3 id="baslik">
+                Eski Başlık
+            </h3>
+
+            <button
+                id="changeTitle"
+                class="button"
+            >
+                Başlığı Değiştir
+            </button>
+
+        </div>
+
+    </article>
+
+
+    <!-- Event -->
+
+    <article>
+
+        <h2>
+            5. Event
+        </h2>
+
+        <p>
+            Kullanıcının yaptığı işlemleri event listener
+            ile yakalayabiliriz.
+        </p>
+
+        <pre><code>button.addEventListener(
+    "click",
+    () => {
+
+        console.log("Tıklandı!");
+
+    }
+);</code></pre>
+
+
+        <div class="example-box">
+
+            <button
+                id="helloButton"
+                class="button"
+            >
+                Bana Tıkla
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+    </article>
+
+
+    <!-- Form -->
+
+    <article>
+
+        <h2>
+            6. Form işlemleri
+        </h2>
+
+        <p>
+            Formdan gelen bilgileri JavaScript ile okuyabiliriz.
+        </p>
+
+
+        <form id="nameForm">
+
+            <label for="name">
+                Adınız
+            </label>
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Adınızı yazın"
+            >
+
+            <button
+                type="submit"
+                class="button"
+            >
+                Gönder
+            </button>
+
+        </form>
+
+
+        <p id="formMessage"></p>
+
+    </article>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            Frontend101 ©
+            <span id="year"></span>
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

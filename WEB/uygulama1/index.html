@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Frontend Öğreniyorum</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Frontend<span>101</span>
+        </a>
+
+        <button id="menuButton" class="menu-button">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html" class="active">
+                Ana Sayfa
+            </a>
+
+            <a href="html-css.html">
+                HTML & CSS
+            </a>
+
+            <a href="javascript.html">
+                JavaScript
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <div>
+
+                <span class="badge">
+                    Başlangıç Seviyesi
+                </span>
+
+                <h1>
+                    Web geliştirmeyi
+                    <span>kod yazarak</span> öğren.
+                </h1>
+
+                <p>
+                    HTML, CSS ve JavaScript kullanarak
+                    kendi web sitelerini oluşturmayı öğren.
+                </p>
+
+                <a
+                    href="html-css.html"
+                    class="button"
+                >
+                    Eğitime Başla
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <img
+                    class="hero-image"
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                    alt="Bilgisayarda kod yazma"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Teknolojiler -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="badge">
+                    Öğreneceklerin
+                </span>
+
+                <h2>
+                    Frontend'in temel teknolojileri
+                </h2>
+
+                <p>
+                    Bir web sitesinin temelini oluşturan
+                    üç teknolojiyi öğren.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&w=600&q=80"
+                        alt="HTML kodları"
+                    >
+
+                    <div class="card-body">
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            Web sayfasının yapısını oluşturmayı öğren.
+                        </p>
+
+                        <a href="html-css.html">
+                            HTML öğren →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80"
+                        alt="Web tasarımı"
+                    >
+
+                    <div class="card-body">
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            Sayfaları renklendirmeyi ve düzenlemeyi öğren.
+                        </p>
+
+                        <a href="html-css.html">
+                            CSS öğren →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+                        alt="JavaScript kodları"
+                    >
+
+                    <div class="card-body">
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Web sayfalarına etkileşim kazandırmayı öğren.
+                        </p>
+
+                        <a href="javascript.html">
+                            JavaScript öğren →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Sayaç -->
+
+    <section class="demo">
+
+        <div class="container">
+
+            <h2>
+                Küçük JavaScript Uygulaması
+            </h2>
+
+            <p>
+                Butonlara tıklayarak sayacı değiştir.
+            </p>
+
+            <div class="counter">
+
+                <strong id="counter">
+                    0
+                </strong>
+
+                <div>
+
+                    <button
+                        id="decrease"
+                        class="button secondary"
+                    >
+                        -
+                    </button>
+
+                    <button
+                        id="increase"
+                        class="button"
+                    >
+                        +
+                    </button>
+
+                    <button
+                        id="reset"
+                        class="button secondary"
+                    >
+                        Sıfırla
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            Frontend101 ©
+            <span id="year"></span>
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

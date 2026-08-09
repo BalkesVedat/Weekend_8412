@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>HTML & CSS | Frontend101</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Frontend<span>101</span>
+        </a>
+
+        <button id="menuButton" class="menu-button">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="index.html">
+                Ana Sayfa
+            </a>
+
+            <a href="html-css.html" class="active">
+                HTML & CSS
+            </a>
+
+            <a href="javascript.html">
+                JavaScript
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-title">
+
+    <div class="container">
+
+        <span class="badge">
+            Ders 1
+        </span>
+
+        <h1>
+            HTML & CSS
+        </h1>
+
+        <p>
+            Web sayfasının yapısını ve görünümünü oluşturmayı öğren.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container lesson">
+
+
+    <!-- HTML -->
+
+    <article>
+
+        <h2>
+            1. HTML nedir?
+        </h2>
+
+        <p>
+            HTML, web sayfasının içeriğini ve yapısını oluşturur.
+        </p>
+
+        <pre><code>&lt;h1&gt;Merhaba Dünya&lt;/h1&gt;
+
+&lt;p&gt;
+    İlk web sayfamı oluşturuyorum.
+&lt;/p&gt;
+
+&lt;a href="https://example.com"&gt;
+    Siteye git
+&lt;/a&gt;</code></pre>
+
+    </article>
+
+
+    <!-- Semantic HTML -->
+
+    <article>
+
+        <h2>
+            2. Semantik HTML
+        </h2>
+
+        <p>
+            Sayfanın bölümlerini anlamlı HTML elementleriyle
+            tanımlayabiliriz.
+        </p>
+
+        <pre><code>&lt;header&gt;
+    Site başlığı
+&lt;/header&gt;
+
+&lt;nav&gt;
+    Menü
+&lt;/nav&gt;
+
+&lt;main&gt;
+
+    &lt;section&gt;
+        Ana içerik
+    &lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+    Alt bilgi
+&lt;/footer&gt;</code></pre>
+
+    </article>
+
+
+    <!-- CSS -->
+
+    <article>
+
+        <h2>
+            3. CSS nedir?
+        </h2>
+
+        <p>
+            CSS, HTML elementlerinin görünümünü kontrol eder.
+        </p>
+
+        <pre><code>body {
+    background: #f5f5f5;
+}
+
+h1 {
+    color: blue;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+}</code></pre>
+
+    </article>
+
+
+    <!-- Flexbox -->
+
+    <article>
+
+        <h2>
+            4. Flexbox
+        </h2>
+
+        <p>
+            Flexbox elementleri yatay veya dikey olarak
+            düzenlemek için kullanılır.
+        </p>
+
+        <pre><code>.menu {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}</code></pre>
+
+
+        <div class="flex-example">
+
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JS</div>
+
+        </div>
+
+    </article>
+
+
+    <!-- Responsive -->
+
+    <article>
+
+        <h2>
+            5. Responsive Tasarım
+        </h2>
+
+        <p>
+            Web sitesinin telefon, tablet ve bilgisayarlarda
+            düzgün görünmesini sağlarız.
+        </p>
+
+        <pre><code>@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}</code></pre>
+
+    </article>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            Frontend101 ©
+            <span id="year"></span>
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

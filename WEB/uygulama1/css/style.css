@@ -1,0 +1,699 @@
+/* ==================================================
+   TEMEL AYARLAR
+   ================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #3730a3;
+
+    --dark: #111827;
+    --text: #374151;
+    --muted: #6b7280;
+
+    --light: #f8fafc;
+    --white: #ffffff;
+
+    --border: #e5e7eb;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--text);
+
+    background: var(--light);
+
+    line-height: 1.6;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* ==================================================
+   GENEL
+   ================================================== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.section {
+    padding: 70px 0;
+}
+
+
+.badge {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    color: var(--primary);
+
+    background: #eef2ff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.button {
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    color: white;
+
+    background: var(--primary);
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.button:hover {
+    background: var(--primary-dark);
+}
+
+
+.button.secondary {
+    color: var(--dark);
+
+    background: white;
+
+    border: 1px solid var(--border);
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+header {
+    background: white;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.navbar {
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo {
+    color: var(--dark);
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.logo span {
+    color: var(--primary);
+}
+
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+nav a {
+    color: var(--text);
+
+    font-weight: 600;
+}
+
+
+nav a:hover,
+nav a.active {
+    color: var(--primary);
+}
+
+
+.menu-button {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   ANA SAYFA - HERO
+   ================================================== */
+
+.hero {
+    padding: 80px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f8fafc
+        );
+}
+
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+.hero h1 {
+    margin: 15px 0;
+
+    color: var(--dark);
+
+    font-size:
+        clamp(
+            40px,
+            6vw,
+            65px
+        );
+
+    line-height: 1.1;
+}
+
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+
+.hero p {
+    max-width: 550px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: 18px;
+}
+
+
+.hero-image {
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==================================================
+   SECTION BAŞLIĞI
+   ================================================== */
+
+.section-heading {
+    max-width: 650px;
+
+    margin-bottom: 40px;
+}
+
+
+.section-heading h2 {
+    margin: 10px 0;
+
+    color: var(--dark);
+
+    font-size: 34px;
+}
+
+
+.section-heading p {
+    color: var(--muted);
+}
+
+
+/* ==================================================
+   KARTLAR
+   ================================================== */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.card {
+    overflow: hidden;
+
+    background: white;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.2s;
+}
+
+
+.card:hover {
+    transform:
+        translateY(-5px);
+}
+
+
+.card img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+}
+
+
+.card-body {
+    padding: 25px;
+}
+
+
+.card h3 {
+    margin-bottom: 8px;
+
+    color: var(--dark);
+
+    font-size: 22px;
+}
+
+
+.card p {
+    margin-bottom: 15px;
+
+    color: var(--muted);
+}
+
+
+.card a {
+    color: var(--primary);
+
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   JAVASCRIPT DEMO
+   ================================================== */
+
+.demo {
+    padding: 70px 0;
+
+    color: white;
+
+    background: var(--dark);
+
+    text-align: center;
+}
+
+
+.demo h2 {
+    margin-bottom: 8px;
+}
+
+
+.demo p {
+    color: #9ca3af;
+}
+
+
+.counter {
+    max-width: 400px;
+
+    margin: 30px auto 0;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    background: #1f2937;
+}
+
+
+.counter strong {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 60px;
+}
+
+
+.counter button {
+    margin: 4px;
+}
+
+
+/* ==================================================
+   SAYFA BAŞLIĞI
+   ================================================== */
+
+.page-title {
+    padding: 70px 0;
+
+    background:
+        #eef2ff;
+}
+
+
+.page-title h1 {
+    margin: 10px 0;
+
+    color: var(--dark);
+
+    font-size: 45px;
+}
+
+
+.page-title p {
+    color: var(--muted);
+}
+
+
+/* ==================================================
+   DERSLER
+   ================================================== */
+
+.lesson {
+    max-width: 850px;
+}
+
+
+.lesson article {
+    margin-bottom: 60px;
+}
+
+
+.lesson h2 {
+    margin-bottom: 12px;
+
+    color: var(--dark);
+
+    font-size: 28px;
+}
+
+
+.lesson p {
+    margin-bottom: 15px;
+}
+
+
+pre {
+    overflow-x: auto;
+
+    margin: 20px 0;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    color: #e5e7eb;
+
+    background: #111827;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+code {
+    font-family:
+        Consolas,
+        Monaco,
+        monospace;
+}
+
+
+/* ==================================================
+   FLEXBOX ÖRNEĞİ
+   ================================================== */
+
+.flex-example {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 25px;
+
+    background: #eef2ff;
+
+    border-radius: 10px;
+}
+
+
+.flex-example div {
+    flex: 1;
+
+    padding: 20px;
+
+    color: white;
+
+    background: var(--primary);
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   ETKİLEŞİMLİ ÖRNEK
+   ================================================== */
+
+.example-box {
+    margin-top: 20px;
+
+    padding: 25px;
+
+    background: white;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 10px;
+}
+
+
+.example-box h3 {
+    margin-bottom: 15px;
+
+    color: var(--dark);
+}
+
+
+/* ==================================================
+   FORM
+   ================================================== */
+
+form {
+    max-width: 450px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+input {
+    padding: 12px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 7px;
+}
+
+
+input:focus {
+    outline: 2px solid #c7d2fe;
+
+    border-color:
+        var(--primary);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    padding: 30px 0;
+
+    color: #9ca3af;
+
+    background: #0f172a;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   TABLET / MOBİL
+   ================================================== */
+
+@media (max-width: 750px) {
+
+    .menu-button {
+        display: block;
+    }
+
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        right: 0;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+
+        background: white;
+
+        border-bottom:
+            1px solid
+            var(--border);
+    }
+
+
+    nav.open {
+        display: flex;
+    }
+
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-image {
+        height: 300px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .flex-example {
+        flex-direction: column;
+    }
+
+}
+
+
+/* ==================================================
+   KÜÇÜK EKRAN
+   ================================================== */
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 55px 0;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .page-title h1 {
+        font-size: 36px;
+    }
+
+
+    .section {
+        padding: 50px 0;
+    }
+
+}
