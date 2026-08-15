@@ -12,6 +12,10 @@ body {
     background: #F0F0FF;
 }
 
+p {
+    color:darkgray;
+}
+
 span {
     color:blue;
 }
@@ -27,27 +31,30 @@ button {
 }
 
 .nav {
+    width:100%;
     background: #FFFFFF;
-    width: 100%;
-    height: 40px;
-    margin: 20px 0 20px 0;
-    padding: 10px 15% 10px 15%;
+    height: 50px;
+    margin: 0px 0 20px 0;
+    padding: 20px 0 10px 15%;
+}
+
+.container {
+    
+
 }
 
 .hero {
     width: 100%;
-    height: 400px;
-    margin: 20px 0 20px 0;
-    padding: 10px 15% 10px 15%;
-    vertical-align:middle;
-    align-content:center;
+    height: 500px;
+    margin: 50px 0 20px 0;
+    padding: 20px 0 10px 15%;
+    vertical-align: middle;
 }
 
 #heroSol {
 display:inline-block;
 float:left;
 width:35%;
-
 }
 
 #heroSag {
@@ -58,9 +65,10 @@ width:35%;
 }
 
 #heroBaslik {
-    text-align:left;
-    font-size:72px;
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(40px, 6vw, 65px);
+    text-align: left;
+    font-weight: 700;
 }
 
 #heroMetin {
@@ -71,7 +79,7 @@ width:35%;
 
 #heroImage {
     width:100%;
-    height:380px;
+    height:auto;
     border-radius:15px;
     box-shadow:rgba(0,0,0,0.4) 10px 10px inset;
 }
@@ -116,4 +124,106 @@ width:35%;
 
 #menuButton {
     display: none;
+}
+
+.tekno {
+    width: 100%;
+    height: 500px;
+    margin: 50px 0 20px 0;
+    vertical-align: middle;
+    background-color: #fff;
+    padding: 20px 0 10px 15%;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+    min-width:400px;
+}
+
+.col {
+    overflow: hidden;
+    width: 30%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,255,0.2) 10px 10px;
+}
+
+    .col:hover {
+        transform:translateY(-10px);
+        transition:0.2s;
+    }
+
+    .col a {
+        text-decoration:none;
+        color:blue;
+    }
+
+.colImage {
+    width:100%;
+
+}
+
+#colText {
+    padding:0 15px;
+    margin:10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mb15 {
+margin-bottom:15px;
+}
+
+#teknoSpan {
+    display:inline-block;
+    color:white;
+    background-color:darkblue;
+    padding:5px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.js {
+    width: 100%;
+    height: 500px;
+    margin: 50px 0 20px 0;
+    background-color: #070D33;
+    padding: 20px 0 10px 35%;
+    align-content:center;
+    
+}
+
+.jsBody {
+    width:35%;
+
+}
+
+.jsKutu {
+    background-color: #333333;
+    height:200px;
+    text-align:center;
+    padding:25px;
+    border-radius:20px;
+}
+
+.jsBaslik {
+    font-size:xx-large;
+    color:white;
+    margin-bottom:50px;
+}
+
+.jsParagraf {
+    margin-bottom:30px;
+}
+
+#deger {
+    margin: 25px 0 25px 0;
+    font-size: clamp(40px, 6vw, 65px);
+    font-weight:900;
+    color:white;
 }
